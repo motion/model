@@ -1,0 +1,21 @@
+{
+  "name": "motion-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Motion (motion.io)",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib; babel src --out-dir lib",
+    "watch": "npm run build -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "steelbrain"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-steelbrain": "^4.0.2"
+  }
+}
